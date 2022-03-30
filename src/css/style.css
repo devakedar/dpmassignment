@@ -1,0 +1,144 @@
+/* To-do-list section */
+:root {
+  --border-dimensions: 1.1px;
+  --border-color: #3b66ff;
+  --border-style: solid;
+  --border-radius: 5px;
+}
+
+.to-do-list-section {
+  padding: 4.8rem;
+  height: 100vh;
+}
+
+.header {
+  border: var(--border-dimensions) var(--border-style) var(--border-color);
+  border-radius: var(--border-radius);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
+}
+
+.date {
+  font-size: 3.2rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+  text-align: center;
+  border-top: var(--border-dimensions) var(--border-style) var(--border-color);
+}
+
+.time {
+  font-size: 2.4rem;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.to-do-list {
+  height: 100%;
+  border: var(--border-dimensions) var(--border-style) var(--border-color);
+}
+
+.to-do-list {
+  border-top: 0px;
+  background-color: #ffd43b;
+  overflow: scroll;
+  height: 55rem;
+}
+
+.to-do-list-container {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  margin: 4.8rem 0;
+}
+
+.todos {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.2rem;
+}
+
+.todo__elem {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #fff3bf;
+
+  list-style-type: none;
+}
+
+.todo__elem_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.todo__content {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+/* For development purpose only */
+.strike {
+  text-decoration: line-through;
+}
+
+/* Form */
+.form__input {
+  width: 100%;
+  padding: 0.3rem 1.1rem;
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.8rem;
+  border: none;
+  background-color: #3b66ff;
+  transition: all 0.2s;
+}
+
+.form__input:focus {
+  outline: none;
+  background-color: #ffe066;
+}
+
+/* Btn */
+
+.btn {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #dee2e6;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn__icon {
+  font-size: 1.8rem;
+}
+
+.btn__add {
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.8rem;
+}
+
+.btn__add:hover,
+.btn__add:active {
+  background-color: #dee2e6;
+  box-shadow: inset 0 0 0 3px #fff;
+}

@@ -21,21 +21,21 @@ Paragraph: 1.6
 Large: 1.8
 
 - LETTER SPACING
+-0.4px
 -0.5px
--0.75px
 
 
 --- 02 Colors
-Palette #ffd43b #3bff72 #3b66ff #ff3bc8
+Palette #f59f00 #00F525 #0056F5 #F500D0
 
-- MAIN COLOR: #ffd43b;
+- MAIN COLOR: #f59f00;
 
-- TINTS: #ffe066;
+- TINTS: #fab005;
 - SHADES: 
 - ACCENTS:
 
 
-- GREY COLOR: #343a40; #e9ecef;
+- GREY COLOR: #212529; #e9ecef;
 
 
 --- 03 Images
@@ -83,7 +83,7 @@ body {
   font-weight: 400;
 
   line-height: 1;
-  color: #343a40;
+  color: #212529;
 }
 
 /* ---------------------------- */
@@ -101,12 +101,4 @@ body {
 
 .hidden {
   display: none;
-}
-
-.heading__primary {
-  font-size: 6.4rem;
-  font-weight: 500;
-  letter-spacing: -2px;
-  text-align: center;
-  border: none;
 }

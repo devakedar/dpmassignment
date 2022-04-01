@@ -1,7 +1,9 @@
 /* To-do-list section */
 :root {
-  --border-dimensions: 1.1px;
   --border-color: #3b66ff;
+  --to-do-bg-color: #f59f00;
+
+  --border-dimensions: 1.1px;
   --border-style: solid;
   --border-radius: 5px;
 }
@@ -19,18 +21,29 @@
   overflow: hidden;
 }
 
+.heading__primary {
+  font-size: 6.4rem;
+  font-weight: 500;
+  letter-spacing: -2px;
+  text-align: center;
+  border-bottom: var(--border-dimensions) var(--border-style)
+    var(--border-color);
+}
+
 .date {
   font-size: 3.2rem;
   font-weight: 500;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
   text-align: center;
-  border-top: var(--border-dimensions) var(--border-style) var(--border-color);
 }
 
 .time {
   font-size: 2.4rem;
   text-align: center;
-  letter-spacing: -1px;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.4px;
 }
 
 .to-do-list {
@@ -40,13 +53,14 @@
 
 .to-do-list {
   border-top: 0px;
-  background-color: #ffd43b;
+  background-color: var(--to-do-bg-color);
   overflow: scroll;
   height: 55rem;
 }
 
 .to-do-list-container {
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-dimensions);
   margin: 4.8rem 0;
 }
 
@@ -65,7 +79,6 @@
   justify-content: space-between;
   padding-bottom: 1.2rem;
   border-bottom: 1px solid #fff3bf;
-
   list-style-type: none;
 }
 
@@ -82,11 +95,6 @@
   font-weight: 600;
 }
 
-/* For development purpose only */
-.strike {
-  text-decoration: line-through;
-}
-
 /* Form */
 .form__input {
   width: 100%;
@@ -95,13 +103,18 @@
   color: inherit;
   font-size: 1.8rem;
   border: none;
+  border-radius: var(--border-radius);
   background-color: #3b66ff;
   transition: all 0.2s;
+
+  padding: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.2rem;
 }
 
 .form__input:focus {
   outline: none;
-  background-color: #ffe066;
+  background-color: #fab005;
 }
 
 /* Btn */
@@ -131,14 +144,23 @@
 .btn__add {
   border: none;
   cursor: pointer;
-  transition: all 0.3s;
-  padding: 1rem;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   font-size: 1.8rem;
+
+  padding: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.2rem;
+
+  transition: all 0.3s;
 }
 
 .btn__add:hover,
 .btn__add:active {
   background-color: #dee2e6;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+/* When to do list is done */
+.strike {
+  text-decoration: line-through;
 }

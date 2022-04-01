@@ -56,6 +56,12 @@
   background-color: var(--to-do-bg-color);
   overflow: scroll;
   height: 55rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  position: relative;
 }
 
 .to-do-list-container {
@@ -66,10 +72,13 @@
 
 .todos {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+
   gap: 1.2rem;
-  padding: 1.2rem;
+
+  padding: 0 1.2rem 1.2rem 1.2rem;
 }
 
 .todo__elem {
@@ -80,6 +89,8 @@
   padding-bottom: 1.2rem;
   border-bottom: 1px solid #fff3bf;
   list-style-type: none;
+
+  position: relative;
 }
 
 .todo__elem_box {
@@ -95,72 +106,22 @@
   font-weight: 600;
 }
 
-/* Form */
-.form__input {
-  width: 100%;
-  padding: 0.3rem 1.1rem;
-  font-family: inherit;
-  color: inherit;
-  font-size: 1.8rem;
-  border: none;
-  border-radius: var(--border-radius);
-  background-color: #3b66ff;
-  transition: all 0.2s;
+/* Form container */
+.form__container {
+  position: absolute;
+  width: 95%;
+  transition: all 0.3s;
 
-  padding: 1rem;
-  margin-top: 0.8rem;
-  margin-bottom: 1.2rem;
+  /* Horizontally Center */
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 1.5rem);
 }
 
-.form__input:focus {
-  outline: none;
-  background-color: #fab005;
-}
-
-/* Btn */
-
-.btn {
-  border: none;
+/* Edit Form */
+.edit-form {
   display: flex;
+  gap: 1.5rem;
   align-items: center;
-  justify-content: center;
-
-  padding: 1rem;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.btn:hover,
-.btn:active {
-  background-color: #dee2e6;
-  box-shadow: inset 0 0 0 3px #fff;
-}
-
-.btn__icon {
-  font-size: 1.8rem;
-}
-
-.btn__add {
-  border: none;
-  cursor: pointer;
-  border-radius: var(--border-radius);
-  font-size: 1.8rem;
-
-  padding: 1rem;
-  margin-top: 0.8rem;
-  margin-bottom: 1.2rem;
-
-  transition: all 0.3s;
-}
-
-.btn__add:hover,
-.btn__add:active {
-  background-color: #dee2e6;
-  box-shadow: inset 0 0 0 3px #fff;
-}
-
-/* When to do list is done */
-.strike {
-  text-decoration: line-through;
+  justify-content: flex-start;
 }

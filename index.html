@@ -38,13 +38,16 @@
             <div class="time">6:30 PM</div>
           </header>
           <div class="to-do-list">
-            <ul class="todos">
-              <button class="btn__add">Add Task Here!</button>
+            <button class="btn__add">Add Task Here!</button>
 
-              <!-- Put hidden class here -->
+            <!-- Put hidden class here -->
+            <div class="form__container hidden">
               <form class="form">
-                <input class="form__input hidden" type="text">
+                <input class="form__input" type="text">
               </form>
+            </div>
+
+            <ul class="todos">
 
               <li class="todo__elem">
                 <div class="todo__elem_box">
@@ -53,7 +56,20 @@
                   </button>
 
                   <p class="todo__content">Clean house!</p>
+
+                  <!-- Edit Form -->
+                  <div class="edit-form__container display-none">
+                    <form class="edit-form">
+                      <textarea class="edit-text form__input margin-reset" cols="20" rows="4"
+                        spellcheck="true"></textarea>
+
+                      <button class="btn btn__submit">
+                        <ion-icon class="btn__icon" name="save-outline"></ion-icon>
+                      </button>
+                    </form>
+                  </div>
                 </div>
+
 
                 <div class="todo__elem_box">
                   <button class="btn btn__edit">
@@ -72,9 +88,24 @@
                     <ion-icon class="btn__icon" name="checkmark-outline"></ion-icon>
                   </button>
 
-                  <p class="todo__content">Go to 17 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Nihil quas ea exercitationem laboriosam natus adipisci consectetur</p>
+                  <p class="todo__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                    distinctio inventore quae corporis ex beatae facere quasi incidunt! Sequi nemo corrupti temporibus
+                    dolores maiores obcaecati fugiat atque eos aperiam unde.
+                  </p>
+
+                  <!-- Edit Form -->
+                  <div class="edit-form__container display-none">
+                    <form class="edit-form">
+                      <textarea class="edit-text form__input margin-reset" cols="20" rows="4"
+                        spellcheck="true"></textarea>
+
+                      <button class="btn btn__submit">
+                        <ion-icon class="btn__icon" name="save-outline"></ion-icon>
+                      </button>
+                    </form>
+                  </div>
                 </div>
+
 
                 <div class="todo__elem_box">
                   <button class="btn btn__edit">
@@ -86,6 +117,7 @@
                   </button>
                 </div>
               </li>
+
 
               <li class="todo__elem">
                 <div class="todo__elem_box">
@@ -93,10 +125,23 @@
                     <ion-icon class="btn__icon" name="checkmark-outline"></ion-icon>
                   </button>
 
-                  <p class="todo__content strike">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-                    exercitationem expedita laborum molestiae illo eligendi voluptates neque cum quibusdam placeat qui
-                    dolor quidem sequi aut, repudiandae ex architecto dolores quas.</p>
+                  <p class="todo__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente itaque
+                    modi a quibusdam facere temporibus omnis ipsum dolores doloremque, vel numquam, architecto possimus.
+                    Consequuntur amet recusandae non illo nam eveniet.</p>
+
+                  <!-- Edit Form -->
+                  <div class="edit-form__container display-none">
+                    <form class="edit-form">
+                      <textarea class="edit-text form__input margin-reset" cols="20" rows="4"
+                        spellcheck="true"></textarea>
+
+                      <button class="btn btn__submit">
+                        <ion-icon class="btn__icon" name="save-outline"></ion-icon>
+                      </button>
+                    </form>
+                  </div>
                 </div>
+
 
                 <div class="todo__elem_box">
                   <button class="btn btn__edit">
@@ -108,6 +153,8 @@
                   </button>
                 </div>
               </li>
+
+
             </ul>
           </div>
         </div>

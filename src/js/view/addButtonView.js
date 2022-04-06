@@ -1,4 +1,3 @@
-// TODO add button functionality and business logic on it
 // Add the ID number on HTML
 import View from './View.js';
 

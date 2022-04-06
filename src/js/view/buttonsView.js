@@ -2,7 +2,6 @@ import View from './View.js';
 
 class Buttons extends View {
   _parentEl = document.querySelector('.todos');
-  // TODO Refactor this if you can have 1 click ID only
   deleteID;
 
   checkStrike() {

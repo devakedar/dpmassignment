@@ -24,6 +24,7 @@ export default class View {
     this._editedData.editedEl.insertAdjacentHTML('afterbegin', html);
   }
 
+  // TODO merge render and render TodoStorage
   renderTodoStorage(data) {
     if (!data) return;
     this._data = data;

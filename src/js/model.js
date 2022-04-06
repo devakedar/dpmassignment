@@ -10,18 +10,28 @@ const state = {
 
 // Add todos
 const createTodos = function (todoData) {
-  console.log(state.currentID);
   state.todoList.push({ todo: todoData, id: ++state.currentID });
   state.renderTodo = { todo: todoData, id: state.currentID };
   storeTodos();
-
-  // TODO Store todo in localStorage
-  console.log(state.currentID);
 };
 
 // Store ID
 const createCurrentID = function (currID) {
-  state.currentID = currID;
+  if (currID) {
+    // CurrID will set if there is an child element on the hardcoded HTML Todos
+    console.log(currID, 'CurrID');
+    return (state.currentID = currID);
+  }
+
+  if (state.todoList.length === 0) return;
+  const maxID = state.todoList
+    .map(todoData => todoData.id)
+    .reduce((acc, id) => {
+      if (acc > id) return acc;
+      if (acc < id) return id;
+    });
+
+  state.currentID = maxID;
 };
 
 // Edit todos in state
@@ -39,9 +49,12 @@ const editTodos = function (editData) {
 
 // Delete todos in state
 const deleteTodos = function (id) {
-  state.todoList = state.todoList.filter(todoData => todoData.id !== +id);
+  const indexToDelete = state.todoList.findIndex(
+    todoData => todoData.id === +id
+  );
+  state.todoList.splice(indexToDelete, 1);
+
   storeTodos();
-  console.log(state);
 };
 
 // Store in localStorage API
@@ -49,6 +62,7 @@ const storeTodos = function () {
   try {
     localStorage.setItem('todos', JSON.stringify(state.todoList));
   } catch (err) {
+    // TODO Throw an error window
     // Throw Error
   }
 };

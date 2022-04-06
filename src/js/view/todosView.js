@@ -21,9 +21,11 @@ class TodosView extends View {
     const todosArray = [...this._parentEl.children];
     const idArr = [];
 
-    if (!todosArray) return;
-    todosArray.forEach(todoEl => idArr.push(+todoEl.dataset.idNumber));
+    if (todosArray.length === 0) {
+      return handler();
+    }
 
+    todosArray.forEach(todoEl => idArr.push(+todoEl.dataset.idNumber));
     if (idArr.length === 0) return;
     const maxID = idArr.reduce((acc, id) => {
       if (acc > id) return acc;

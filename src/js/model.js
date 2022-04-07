@@ -1,6 +1,7 @@
 'use strict';
 import * as config from './config.js';
 
+// TODO add checkmark on localStorage API
 const state = {
   renderTodo: {},
   editedTodo: {},
@@ -19,7 +20,6 @@ const createTodos = function (todoData) {
 const createCurrentID = function (currID) {
   if (currID) {
     // CurrID will set if there is an child element on the hardcoded HTML Todos
-    console.log(currID, 'CurrID');
     return (state.currentID = currID);
   }
 
@@ -59,12 +59,7 @@ const deleteTodos = function (id) {
 
 // Store in localStorage API
 const storeTodos = function () {
-  try {
-    localStorage.setItem('todos', JSON.stringify(state.todoList));
-  } catch (err) {
-    // TODO Throw an error window
-    // Throw Error
-  }
+  localStorage.setItem('todos', JSON.stringify(state.todoList));
 };
 
 const init = function () {

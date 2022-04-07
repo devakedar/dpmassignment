@@ -1,4 +1,3 @@
-'use strict';
 // TODO Create the model and view js
 import * as model from './model.js';
 import dateTimeView from './view/dateTimeView.js';
@@ -7,6 +6,8 @@ import addButtonView from './view/addButtonView.js';
 import todosView from './view/todosView.js';
 import editedView from './view/editedView.js';
 
+import 'core-js/stable';
+import 'regenerator-runtime';
 // Get current ID
 const controlID = function (currID) {
   model.createCurrentID(currID);

@@ -1,0 +1,114 @@
+:root {
+  --border-color: #3b66ff;
+  --to-do-bg-color: #f59f00;
+  --border-dimensions: 1.1px;
+  --border-style: solid;
+  --border-radius: 5px;
+}
+
+.to-do-list-section {
+  padding: 4.8rem;
+}
+
+.header {
+  border: var(--border-dimensions) var(--border-style) var(--border-color);
+  border-radius: var(--border-radius);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
+}
+
+.heading__primary {
+  letter-spacing: -2px;
+  text-align: center;
+  border-bottom: var(--border-dimensions) var(--border-style) var(--border-color);
+  font-size: 6.4rem;
+  font-weight: 500;
+}
+
+.date {
+  letter-spacing: -.5px;
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: .4rem;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.time {
+  text-align: center;
+  letter-spacing: -.4px;
+  margin-bottom: 1.2rem;
+  font-size: 2.4rem;
+}
+
+.to-do-list {
+  height: 100%;
+  border: var(--border-dimensions) var(--border-style) var(--border-color);
+  background-color: var(--to-do-bg-color);
+  height: 55rem;
+  border-top: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  display: flex;
+  position: relative;
+  overflow: scroll;
+}
+
+.to-do-list-container {
+  border-radius: var(--border-dimensions);
+  margin: 4.8rem 0;
+  box-shadow: 0 2.4rem 4.8rem #0003;
+}
+
+.todos {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 0 1.2rem 1.2rem;
+  display: flex;
+}
+
+.todo__elem {
+  border-bottom: 1px solid #fff3bf;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+  padding-bottom: 1.2rem;
+  list-style-type: none;
+  display: flex;
+  position: relative;
+}
+
+.todo__elem_box {
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  display: flex;
+}
+
+.todo__content {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.form__container {
+  width: 95%;
+  transition: all .3s;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 1.5rem);
+}
+
+.edit-form {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.3ff9f682.css.map */

@@ -1,0 +1,68 @@
+@media (max-width: 59em) {
+  html {
+    height: 100vh;
+  }
+
+  .container {
+    max-width: 100vw;
+  }
+
+  .to-do-list-section {
+    padding: 0;
+  }
+
+  .to-do-list-container {
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .header {
+    border: none;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 .4rem #0056f54d;
+  }
+
+  .heading__primary {
+    border: none;
+    box-shadow: 0 4px 2px -2px #0056f54d;
+  }
+
+  .to-do-list {
+    height: 100vh;
+    border: none;
+    box-shadow: inset 0 0 0 .4rem #0056f54d;
+  }
+
+  .todo__elem_box {
+    gap: 2.4rem;
+  }
+
+  .btn__add, .form__input {
+    padding: 2rem;
+  }
+
+  .btn {
+    padding: 1.4rem;
+  }
+
+  .btn__icon {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 34em) {
+  html {
+    font-size: 55%;
+  }
+
+  .btn {
+    padding: 1.4rem;
+  }
+
+  .btn__icon {
+    font-size: 1.8rem;
+  }
+}
+
+/*# sourceMappingURL=index.980437a1.css.map */

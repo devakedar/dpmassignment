@@ -1,0 +1,27 @@
+{
+  "name": "to-do-list-webapp",
+  "version": "1.0.0",
+  "description": "A simple crud webapp",
+  "default": "index.js",
+  "dependencies": {
+    "core-js": "^3.21.1",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  },
+  "scripts": {
+    "start": "parcel index.html --dist-dir ./dev/dist",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffrey125/todo-list-webapp.git"
+  },
+  "author": "Jeffrey Asilo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffrey125/todo-list-webapp/issues"
+  },
+  "homepage": "https://github.com/jeffrey125/todo-list-webapp#readme"
+}

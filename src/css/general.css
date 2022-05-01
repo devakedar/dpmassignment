@@ -158,12 +158,12 @@ body {
   padding: 1rem;
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 1s;
 }
 
 .btn:hover,
 .btn:active {
-  background-color: #dee2e6;
+  background-color: #ced4da;
   box-shadow: inset 0 0 0 3px #fff;
 }
 
@@ -181,7 +181,7 @@ body {
 
   padding: 1rem;
 
-  transition: all 0.3s;
+  transition: all 1s;
 }
 
 .btn__add:hover,

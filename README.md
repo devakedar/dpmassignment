@@ -19,3 +19,7 @@ You can check the webapp here at: https://todo-list-webapp-dun.vercel.app/
 - Adding a Confirm modal if you want to delete a task
 
 - Adding a strikethrough even if the webpage is reloaded (State edit)
+
+### Refactors TODO
+
+- BEM naming convention on CSS/HTML

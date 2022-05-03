@@ -36,6 +36,11 @@ class AddButtonView extends View {
 
     if (!addBTN) return;
     this._toggle();
+
+    // Input Focus
+    setTimeout(() => {
+      this._parentEl.querySelector('.form__input').focus();
+    }, 300);
   }
 
   _toggle() {

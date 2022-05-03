@@ -8,14 +8,14 @@ You can check the webapp here at: https://todo-list-webapp-dun.vercel.app/
 
 ## Features to be implemented in the future
 
--Sorting of Tasks by implementing a drag and drop functionality
+- Sorting of Tasks by implementing a drag and drop functionality
 
--Adding a visual buttons(Confirm and Cancel) on the Add new Task row
+- Adding a visual buttons(Confirm and Cancel) on the Add new Task row
 
--When add new Task is clicked add a focus functionality on the input
+~~ - When add new Task is clicked add a focus functionality on the input ~~
 
--Adding a smooth animation whereas a task is added
+- Adding a smooth animation whereas a task is added
 
--Adding a Confirm modal if you want to delete a task
+- Adding a Confirm modal if you want to delete a task
 
--Adding a strikethrough even if the webpage is reloaded (State edit)
+- Adding a strikethrough even if the webpage is reloaded (State edit)

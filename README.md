@@ -14,6 +14,8 @@ You can check the webapp here at: https://todo-list-webapp-dun.vercel.app/
 
 - ~~When add new Task is clicked add a focus functionality on the input~~
 
+- Add an off focus event on form input
+
 - Adding a smooth animation whereas a task is added
 
 - Adding a Confirm modal if you want to delete a task
